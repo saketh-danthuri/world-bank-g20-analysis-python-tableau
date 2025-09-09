@@ -140,9 +140,13 @@ World-Bank-G20-Analysis
 
 ## Dashboards
 ### Growth, Trade, Digital, FDI
+👉 [**Dashboard Link**](https://public.tableau.com/app/profile/saketh.danthuri/viz/World_Bank_Project_Dashboard2/Dashboard2) 
+
 ![Dashboard 1](images/Dashboard_2.png)
 
 ### Inflation, Employment, Access, Education
+👉 [**Dashboard Link**](https://public.tableau.com/app/profile/saketh.danthuri/viz/World_Bank_Project_Dashboard1/Dashboard1) 
+ 
 ![Dashboard 2](images/Dashboard_1.png)
 
 ---
