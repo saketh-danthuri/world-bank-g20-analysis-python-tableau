@@ -1,0 +1,1961 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (g20_worldbankdata)' inline='true' name='federated.1namhqv1uk0m0j10i0sdj09imuin' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='g20_worldbankdata' name='excel-direct.0tyvgei1yg0i4l1gjj3w601r97m9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/sakethdanthuri/World Bank Project/g20_worldbankdata.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0tyvgei1yg0i4l1gjj3w601r97m9' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:W115:no:A1:W115:0' header='yes' outcome='6'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='real' name='Gross Domestic Product (GDP)' ordinal='3' />
+            <column datatype='real' name='Gross National Income (GNI)' ordinal='4' />
+            <column datatype='real' name='Inflation rate' ordinal='5' />
+            <column datatype='real' name='Unemployment rate' ordinal='6' />
+            <column datatype='real' name='Poverty rate' ordinal='7' />
+            <column datatype='real' name='Life expectancy' ordinal='8' />
+            <column datatype='real' name='Literacy rate' ordinal='9' />
+            <column datatype='real' name='Access to electricity' ordinal='10' />
+            <column datatype='real' name='Mobile phone subscriptions' ordinal='11' />
+            <column datatype='real' name='Government expenditure on education' ordinal='12' />
+            <column datatype='real' name='Foreign direct investment (FDI)' ordinal='13' />
+            <column datatype='real' name='Exports of goods and services' ordinal='14' />
+            <column datatype='real' name='Imports of goods and services' ordinal='15' />
+            <column datatype='real' name='Gross capital formation' ordinal='16' />
+            <column datatype='real' name='Agricultural land area' ordinal='17' />
+            <column datatype='real' name='Agricultural production index' ordinal='18' />
+            <column datatype='real' name='GDP_BN' ordinal='19' />
+            <column datatype='real' name='GNI_BN' ordinal='20' />
+            <column datatype='integer' name='year_o' ordinal='21' />
+            <column datatype='real' name='net_exim_bal' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W115:no:A1:W115:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Domestic Product (GDP)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Domestic Product (GDP)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gross Domestic Product (GDP)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross National Income (GNI)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross National Income (GNI)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gross National Income (GNI)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflation rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inflation rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Inflation rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Unemployment rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poverty rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Poverty rate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life expectancy]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Life expectancy</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Literacy rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Literacy rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Literacy rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Access to electricity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Access to electricity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Access to electricity</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mobile phone subscriptions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mobile phone subscriptions]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Mobile phone subscriptions</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Government expenditure on education</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Government expenditure on education]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Government expenditure on education</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreign direct investment (FDI)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foreign direct investment (FDI)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Foreign direct investment (FDI)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exports of goods and services</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exports of goods and services]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Exports of goods and services</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Imports of goods and services</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Imports of goods and services]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Imports of goods and services</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross capital formation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross capital formation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gross capital formation</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Agricultural land area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Agricultural land area]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Agricultural land area</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Agricultural production index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Agricultural production index]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Agricultural production index</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP_BN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP_BN]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GDP_BN</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GNI_BN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GNI_BN]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GNI_BN</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_o</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_o]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>year_o</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_exim_bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_exim_bal]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>net_exim_bal</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gdp Bn' datatype='real' name='[GDP_BN]' role='measure' type='quantitative' />
+      <column caption='Gni Bn' datatype='real' name='[GNI_BN]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Net Exim Bal' datatype='real' name='[net_exim_bal]' role='measure' type='quantitative' />
+      <column caption='Year O' datatype='integer' name='[year_o]' role='dimension' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/pk/4t19nw_d2l55wcxc95bb6dwh0000gq/T/tableau-temp/#TableauTemp_0wlc6x019nqop917ifov01xo3win.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2025 05:12:18 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross Domestic Product (GDP)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross Domestic Product (GDP)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross Domestic Product (GDP)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross National Income (GNI)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross National Income (GNI)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross National Income (GNI)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflation rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Inflation rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflation rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployment rate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poverty rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Poverty rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poverty rate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Life expectancy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Life expectancy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Life expectancy</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Literacy rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Literacy rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Literacy rate</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Access to electricity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Access to electricity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Access to electricity</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mobile phone subscriptions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mobile phone subscriptions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mobile phone subscriptions</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Government expenditure on education</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Government expenditure on education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Government expenditure on education</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Foreign direct investment (FDI)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Foreign direct investment (FDI)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Foreign direct investment (FDI)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exports of goods and services</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Exports of goods and services]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exports of goods and services</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Imports of goods and services</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Imports of goods and services]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Imports of goods and services</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross capital formation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross capital formation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross capital formation</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Agricultural land area</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Agricultural land area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Agricultural land area</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Agricultural production index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Agricultural production index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Agricultural production index</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP_BN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GDP_BN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP_BN</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GNI_BN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GNI_BN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GNI_BN</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_o</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_o]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_o</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_exim_bal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_exim_bal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_exim_bal</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_7CF48B0DD1EA44C6B918145985C8BB05]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Turkiye&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Korea, Rep.&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_7CF48B0DD1EA44C6B918145985C8BB05'>
+            <properties context=''>
+              <relation connection='excel-direct.0tyvgei1yg0i4l1gjj3w601r97m9' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:W115:no:A1:W115:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='real' name='Gross Domestic Product (GDP)' ordinal='3' />
+                  <column datatype='real' name='Gross National Income (GNI)' ordinal='4' />
+                  <column datatype='real' name='Inflation rate' ordinal='5' />
+                  <column datatype='real' name='Unemployment rate' ordinal='6' />
+                  <column datatype='real' name='Poverty rate' ordinal='7' />
+                  <column datatype='real' name='Life expectancy' ordinal='8' />
+                  <column datatype='real' name='Literacy rate' ordinal='9' />
+                  <column datatype='real' name='Access to electricity' ordinal='10' />
+                  <column datatype='real' name='Mobile phone subscriptions' ordinal='11' />
+                  <column datatype='real' name='Government expenditure on education' ordinal='12' />
+                  <column datatype='real' name='Foreign direct investment (FDI)' ordinal='13' />
+                  <column datatype='real' name='Exports of goods and services' ordinal='14' />
+                  <column datatype='real' name='Imports of goods and services' ordinal='15' />
+                  <column datatype='real' name='Gross capital formation' ordinal='16' />
+                  <column datatype='real' name='Agricultural land area' ordinal='17' />
+                  <column datatype='real' name='Agricultural production index' ordinal='18' />
+                  <column datatype='real' name='GDP_BN' ordinal='19' />
+                  <column datatype='real' name='GNI_BN' ordinal='20' />
+                  <column datatype='integer' name='year_o' ordinal='21' />
+                  <column datatype='real' name='net_exim_bal' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Access to Electricity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Access to Electricity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Access to electricity]' role='measure' type='quantitative' />
+            <column-instance column='[Access to electricity]' derivation='Avg' name='[avg:Access to electricity:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[Longitude (generated)]' field-type='quantitative' max='28757262.999021683' min='-26936389.447023515' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[Latitude (generated)]' field-type='quantitative' max='28074605.437511131' min='-21634634.121392347' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Access to electricity:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Access to electricity:qk]' />
+              <geometry column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1namhqv1uk0m0j10i0sdj09imuin].[Latitude (generated)]</rows>
+        <cols>[federated.1namhqv1uk0m0j10i0sdj09imuin].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1A6F1939-1DFD-43D6-BC43-5C2A2305F373}' />
+    </worksheet>
+    <worksheet name='Efficacy of Govt Education Spending'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Efficacy of Govt Education Spending</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Government expenditure on education]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Literacy rate]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_o]' derivation='None' name='[none:year_o:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Government expenditure on education]' derivation='Sum' name='[sum:Government expenditure on education:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Literacy rate]' derivation='Sum' name='[sum:Literacy rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Year O' datatype='integer' name='[year_o]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:year_o:qk]' included-values='in-range'>
+            <min>2015</min>
+            <max>2020</max>
+          </filter>
+          <slices>
+            <column>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:year_o:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Literacy rate:qk]' palette='orange_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Government expenditure on education:qk]' />
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Literacy rate:qk]' />
+              <text column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5FD4BC3A-7965-4C30-92ED-93B3086A2D3A}' />
+    </worksheet>
+    <worksheet name='Exports vs Imports'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Exports vs Imports</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Exports of goods and services]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Imports of goods and services]' role='measure' type='quantitative' />
+            <column-instance column='[Exports of goods and services]' derivation='Avg' name='[avg:Exports of goods and services:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Imports of goods and services]' derivation='Avg' name='[avg:Imports of goods and services:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exports of goods and services]' derivation='Sum' name='[sum:Exports of goods and services:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Exports of goods and services:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='10' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='#b6601a' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='#c4917a' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#c4917a' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='#b6601a' />
+            <format attr='font-weight' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='bold' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Exports of goods and services:qk]' value='#b6601a' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]' value='#b6601a' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Exports of goods and services:qk]' value='#e15759' />
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Exports of goods and services:qk]' value='12' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]' value='#e15759' />
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Imports of goods and services:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Imports of goods and services:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Imports of goods and services:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]</rows>
+        <cols>[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Exports of goods and services:qk]</cols>
+      </table>
+      <simple-id uuid='{1A265A24-C2AC-4937-818A-51E2EBC2B197}' />
+    </worksheet>
+    <worksheet name='FDI Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>FDI Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Foreign direct investment (FDI)]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Foreign direct investment (FDI)]' derivation='None' name='[none:Foreign direct investment (FDI):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' value='#4751ff' />
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' value='10' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='#4751ff' />
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='10' />
+            <format attr='vertical-align' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='auto' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' value='11' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' value='#e15759' />
+            <format attr='font-weight' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:Foreign direct investment (FDI):qk]</rows>
+        <cols>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{55F80C3A-A42A-4C3C-B747-0BD586D6E588}' />
+    </worksheet>
+    <worksheet name='GDP vs Gross Capital Formation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>GDP vs Gross Capital Formation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column caption='Gdp Bn' datatype='real' name='[GDP_BN]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Gross capital formation]' role='measure' type='quantitative' />
+            <column-instance column='[GDP_BN]' derivation='Avg' name='[avg:GDP_BN:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gross capital formation]' derivation='Avg' name='[avg:Gross capital formation:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='10' />
+            <format attr='font-weight' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Gross capital formation:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:GDP_BN:qk]' />
+              <text column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Gross capital formation:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6CD38F7A-415F-46C0-8F20-DC774B8724BE}' />
+    </worksheet>
+    <worksheet name='Inflation Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Inflation Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Inflation rate]' role='measure' type='quantitative' />
+            <column-instance column='[Inflation rate]' derivation='Avg' name='[avg:Inflation rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_o]' derivation='None' name='[none:year_o:qk]' pivot='key' type='quantitative' />
+            <column caption='Year O' datatype='integer' name='[year_o]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:year_o:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' value='#4751ff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:year_o:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' value='bold' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' value='#4751ff' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' value='#b6601a' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+              <text column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Inflation rate:qk]</rows>
+        <cols>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:year_o:qk]</cols>
+      </table>
+      <simple-id uuid='{5C521674-EB15-421C-8351-7D13901B95F6}' />
+    </worksheet>
+    <worksheet name='Mobile Subscriptions vs GNI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Mobile Subscriptions vs GNI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Gross National Income (GNI)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mobile phone subscriptions]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gross National Income (GNI)]' derivation='Sum' name='[sum:Gross National Income (GNI):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mobile phone subscriptions]' derivation='Sum' name='[sum:Mobile phone subscriptions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Mobile phone subscriptions:qk]' palette='orange_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Gross National Income (GNI):qk]' />
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Mobile phone subscriptions:qk]' />
+              <text column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3CC46976-8F95-496B-8AD1-2FFF6005DF83}' />
+    </worksheet>
+    <worksheet name='Unemployment Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#b6601a'>Unemployment Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (g20_worldbankdata)' name='federated.1namhqv1uk0m0j10i0sdj09imuin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1namhqv1uk0m0j10i0sdj09imuin'>
+            <column datatype='real' name='[Unemployment rate]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Unemployment rate]' derivation='Sum' name='[sum:Unemployment rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok]' direction='DESC' measure-to-sort-by='[federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' data-class='total' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' data-class='subtotal' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='#4751ff' />
+            <format attr='color' data-class='subtotal' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='#4751ff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='total-label' data-class='subtotal' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok]' value='Year' />
+            <format attr='total-label' data-class='total' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok]' value='year' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok]' value='#4751ff' />
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='#4751ff' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' value='#e15759' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' />
+              <text column='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1namhqv1uk0m0j10i0sdj09imuin].[yr:date:ok] / [federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk])</rows>
+        <cols>[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Unemployment rate:qk]</cols>
+      </table>
+      <simple-id uuid='{9182AEB1-C2D3-4144-AFC6-E69EA9915703}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98614' id='7' param='horz' type-v2='layout-flow' w='98932' x='534' y='693'>
+            <zone h='98614' id='5' type-v2='layout-basic' w='98932' x='534' y='693'>
+              <zone h='49307' id='3' name='Inflation Rate' w='49465' x='534' y='693'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='9' name='Unemployment Rate' w='49467' x='49999' y='693'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='10' name='Access to Electricity' w='49465' x='534' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='12' name='Efficacy of Govt Education Spending' w='49467' x='49999' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6932' id='8' name='Inflation Rate' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' show-title='false' type-v2='color' w='9352' x='4075' y='3986' />
+        <zone h='3380' id='11' name='Access to Electricity' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Access to electricity:qk]' show-title='false' type-v2='color' w='9352' x='2338' y='87435' />
+        <zone h='3380' id='13' name='Efficacy of Govt Education Spending' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Literacy rate:qk]' show-title='false' type-v2='color' w='9352' x='50768' y='93674' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98614' id='16' param='vert' type-v2='layout-flow' w='98932' x='534' y='693'>
+                <zone fixed-size='280' h='49307' id='3' is-fixed='true' name='Inflation Rate' w='49465' x='534' y='693'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6932' id='8' name='Inflation Rate' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' show-title='false' type-v2='color' w='9352' x='4075' y='3986'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='9' is-fixed='true' name='Unemployment Rate' w='49467' x='49999' y='693'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='10' is-fixed='true' name='Access to Electricity' w='49465' x='534' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3380' id='11' name='Access to Electricity' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Access to electricity:qk]' show-title='false' type-v2='color' w='9352' x='2338' y='87435'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='12' is-fixed='true' name='Efficacy of Govt Education Spending' w='49467' x='49999' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3380' id='13' name='Efficacy of Govt Education Spending' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Literacy rate:qk]' show-title='false' type-v2='color' w='9352' x='50768' y='93674'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C22075E0-FBD1-4C8B-91EF-489ADD6173C8}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98614' id='7' param='horz' type-v2='layout-flow' w='98932' x='534' y='693'>
+            <zone h='98614' id='5' type-v2='layout-basic' w='98932' x='534' y='693'>
+              <zone h='49307' id='3' name='GDP vs Gross Capital Formation' w='49464' x='534' y='693'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='9' name='Exports vs Imports' w='49468' x='49998' y='693'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='10' name='Mobile Subscriptions vs GNI' w='49464' x='534' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49307' id='12' name='FDI Distribution' w='49468' x='49998' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3380' id='8' name='GDP vs Gross Capital Formation' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Gross capital formation:qk]' show-title='false' type-v2='color' w='9352' x='39279' y='2946' />
+        <zone h='3380' id='11' name='Mobile Subscriptions vs GNI' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Mobile phone subscriptions:qk]' show-title='false' type-v2='color' w='9352' x='1403' y='94974' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98614' id='13' param='vert' type-v2='layout-flow' w='98932' x='534' y='693'>
+                <zone fixed-size='280' h='49307' id='3' is-fixed='true' name='GDP vs Gross Capital Formation' w='49465' x='534' y='693'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3380' id='8' name='GDP vs Gross Capital Formation' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Gross capital formation:qk]' show-title='false' type-v2='color' w='9352' x='39279' y='2946'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='9' is-fixed='true' name='Exports vs Imports' w='49467' x='49999' y='693'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='10' is-fixed='true' name='Mobile Subscriptions vs GNI' w='49465' x='534' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3380' id='11' name='Mobile Subscriptions vs GNI' pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Mobile phone subscriptions:qk]' show-title='false' type-v2='color' w='9352' x='1403' y='94974'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49307' id='12' is-fixed='true' name='FDI Distribution' w='49467' x='49999' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BAADFD84-ED50-4504-A4B6-5B075153B1D3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Inflation Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{59401F26-FBBA-45EE-BA33-77646D2D6C58}' />
+    </window>
+    <window class='worksheet' name='Unemployment Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0DED75B7-B28E-41D5-8981-2418CEF264D4}' />
+    </window>
+    <window class='worksheet' name='Access to Electricity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Access to electricity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{D017DD8F-3004-4F07-A5EA-5CC8ECA8D17F}' />
+    </window>
+    <window class='worksheet' name='Efficacy of Govt Education Spending'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Literacy rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A8CC26D-3494-4CCE-B3BA-E77AC02370F3}' />
+    </window>
+    <window class='worksheet' name='GDP vs Gross Capital Formation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[avg:Gross capital formation:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41C868ED-835F-4AF2-9B4D-0CC410F341A8}' />
+    </window>
+    <window class='worksheet' name='Exports vs Imports'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AAF16C09-D94A-48A0-BDA4-FFA707A78177}' />
+    </window>
+    <window class='worksheet' name='Mobile Subscriptions vs GNI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1namhqv1uk0m0j10i0sdj09imuin].[sum:Mobile phone subscriptions:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2D362D8-736F-46FE-B188-7529E4F77B36}' />
+    </window>
+    <window class='worksheet' name='FDI Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{209E45A9-FE28-480F-874C-32C4AC26A2A2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Access to Electricity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Efficacy of Govt Education Spending' />
+        <viewpoint name='Inflation Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Unemployment Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{1EAF3CC3-8BED-449C-9025-E9E64E560657}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Exports vs Imports'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='FDI Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='GDP vs Gross Capital Formation' />
+        <viewpoint name='Mobile Subscriptions vs GNI' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{2C8E4DC7-A64F-4002-A2BC-7D615CB78778}' />
+    </window>
+  </windows>
+</workbook>
